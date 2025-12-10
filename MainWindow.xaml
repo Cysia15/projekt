@@ -1,0 +1,301 @@
+﻿<Window x:Class="GraHistoria.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraHistoria"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3.5*"></RowDefinition>
+            <RowDefinition Height="8*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <!--menu glowne-->
+        <StackPanel Visibility="Visible" Name="stackpanel1row0" Grid.Row="0" Background="Black" Orientation="Vertical">
+            <Image Source="C:\Users\mixu1\Pictures\ChatGPT Image 28 lis 2025, 20_46_00.png" Width="300" Margin="0,-20">
+                
+            </Image>      
+        </StackPanel>
+        <StackPanel  Name="stackpanel1row1" Grid.Row="1" Visibility="Visible"  Orientation="Vertical">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="C:\Users\mixu1\Pictures\pobrany plik.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <Button Name="zacznij" Click="zacznij_Click" Content="Zacznij nowa gre" Background="DimGray" Width="150" Margin="0,20"></Button>
+            <Button Name="ustawienia" Click="ustawienia_Click" Width="150" Content="ustawienia" Background="DimGray" Height="20" Margin="0,-20"> </Button>
+            <Button Name="wyjdz" Click="wyjdz_Click" Width="150" Height="20" Margin="0,20" Background="DimGray" Content="wyjdz"></Button>
+        </StackPanel>
+        <StackPanel Name="stackpanelustawieniarow1" Visibility="Collapsed"  Grid.Row="1" Background="#140505" Orientation="Vertical">
+            <Label Content="USTAWIENIA" Foreground="Wheat"></Label>
+            <StackPanel Orientation="Vertical" >
+                <Label Content="plec:" Foreground="AntiqueWhite" ></Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button></Button>
+            </StackPanel>
+                <Label Content="nick:" Foreground="AntiqueWhite"></Label>
+                
+                <Label Content="Wiek:"></Label>
+                
+                <Button Content="wroc" Width="150" Background="DimGray" FontWeight="Black" Name="wroc" Click="wroc_Click"></Button>
+        </StackPanel>
+        <!--menu glowne-->
+        <StackPanel Name="stackpanel2row01" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://i.redd.it/g2of4az86qv61.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <Image Source="C:\Users\mixu1\Pictures\ChatGPT Image 28 lis 2025, 20_46_00.png" Width="300"></Image>
+            <StackPanel>
+            <Label Content="ustaw swoja ksywke" Foreground="Black" BorderThickness="0" HorizontalAlignment="Center"></Label>
+                <TextBox Background="White" Width="150" Name="nickpole" LostFocus="nickpole_LostFocus"></TextBox>
+                <Button Width="150" Background="Transparent" Content="zatwierdz nick" Name="n"></Button>
+            </StackPanel>
+            <Button Visibility="Collapsed" Content="zacznij" Background="Transparent" FontSize="40" FontWeight="Bold"  Name="zacznij2" Click="zacznij2_Click"></Button>
+        </StackPanel>
+        
+        <!--start gry-->
+        
+        
+        
+        
+        
+        
+        <StackPanel Grid.RowSpan="2" Name="stackpanel3" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://www.rustomjee.com/blog/wp-content/uploads/2024/08/IMAGE_1000-X-374-copy.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <Label HorizontalAlignment="Center" Content="pewnego dnia bawisz sie na placu zabaw gdy nagle widzisz ze chmury zmieniaja kolor na czarny"></Label>
+            <Label Content="myslisz ze nadchodzi burza chcesz schowac sie w domu?" HorizontalAlignment="Center"></Label>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="60">
+
+                <Button Content="Tak" Width="150" Background="Transparent" FontWeight="Bold" Name="tak1" Click="tak1_Click"></Button>
+                <Button Content="Nie" Width="150" Background="Transparent" FontWeight="Bold" Name="nie1" Click="nie1_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+        <!--plac zabaw-->
+
+
+
+
+
+
+        <StackPanel Name="stackpanel41" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://www.godwinvaapts.com/wp-content/uploads/2022/06/lewisRender2.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <Label FontSize="20" Content="Wracasz do domu ogladasz telewizje gdy nagle przerywaja ci to wiadomosci o wielkim"></Label>
+            <Label Content="tornadzie przypomina ci sie ze twoja mama wyszla na miasto" HorizontalAlignment="Center" FontSize="20"></Label>
+            <Label Content="Wyjsc po nia?" FontSize="20" HorizontalAlignment="Center"></Label>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Wyjdz" Width="150" Background="Transparent" Name="wyjdzzdomu" Click="wyjdzzdomu_Click" FontWeight="Bold"></Button>
+                <Button Content="Zostan" Width="150" Background="Transparent" Name="zostanwdomu" Click="zostanwdomu_Click" FontWeight="Bold"></Button>
+            </StackPanel>
+        </StackPanel>
+        <!--dom po placu zabaw-->
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            <StackPanel Name="stackpanelzostan" Visibility="Collapsed" Grid.RowSpan="2">
+                <StackPanel.Background>
+                <ImageBrush ImageSource="https://www.moderngardenrooms.com/wp-content/uploads/2022/03/garden-room-bedroom-3-scaled.jpg"></ImageBrush>
+                </StackPanel.Background>
+
+            <Label Content="zostajesz w domu i postanawiasz sie polozyc spac" HorizontalAlignment="Center" FontSize="20"></Label>
+            <Button Content="idz spac" Width="150" Background="Transparent" Margin="0,110" FontSize="20" HorizontalAlignment="Center" Name="idzspac" Click="idzspac_Click"></Button>
+            </StackPanel>
+            <!--zostanie w domu-->
+
+
+
+
+
+
+        <StackPanel Name="wstanie" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://www.moderngardenrooms.com/wp-content/uploads/2022/03/garden-room-bedroom-3-scaled.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <Label Content="wstajesz rano wypoczety co chcesz zrobic?" FontSize="20" HorizontalAlignment="Center"></Label>
+            <Label Content="+1 dzien"></Label>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50" >
+                
+            <Button Content="wyjrzyj przez okno" Width="150" Background="Transparent" Name="wyjrzyj" Click="wyjrzyj_Click" FontWeight="Bold"></Button>
+            <Button Content="napij sie wody" Width="150" Background="Transparent" Name="napijsiewody" Click="napijsiewody_Click" FontWeight="Bold"></Button>
+            <Button Content="ogladaj tiktoka" Width="150" Background="Transparent" Name="ogladajtt" Click="ogladajtt_Click" FontWeight="Bold"></Button>
+            </StackPanel>
+        </StackPanel>
+            <!--wstanie z lozka-->
+
+        
+        
+        
+        
+        
+        <StackPanel Visibility="Collapsed" Grid.RowSpan="2" Name="wyjrzyjzaokno">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://assets.superhivemarket.com/store/product/185541/image/7b1b631293d53a076f77eb0b26b3bfb8.png"></ImageBrush>
+            </StackPanel.Background>
+            <Label FontSize="20" Foreground="White" HorizontalAlignment="Center" Content="Widzisz ze za oknem miasto lezy w ruinach :o"></Label>
+            <Button Content="Przestan wygladac za okno" Width="150" Background="Transparent" Foreground="White" Name="PrzestanWygladacZaOkno" Click="PrzestanWygladacZaOkno_Click"></Button>
+        </StackPanel>
+        <!--wyjrzyj za okno-->
+
+
+
+
+        <StackPanel Name="stpnapij" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://ipla.pluscdn.pl/dituel/cp/zr/zrabi273o33f81qstk8v7sgi9pb53y5b.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <Label Content="Pijesz wode" Name="pijesz" HorizontalAlignment="Center" Margin="0,200" Foreground="White" FontWeight="Bold"></Label>
+        </StackPanel>
+        <!--napijsiewody-->
+
+
+        <StackPanel Name="codalejzaokno" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://www.godwinvaapts.com/wp-content/uploads/2022/06/lewisRender2.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <Label Content="Po zobaczeniu co sie dzieje z miastem wracasz do salonu co robisz dalej?" HorizontalAlignment="Center" FontSize="20"></Label>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                
+            <Button Name="zastrzel" Click="zastrzel_Click" Content="zastrzel sie." Width="150" Background="Transparent" FontSize="20"></Button>
+            <Button Name="wyjdznamiastoo" Click="wyjdznamiastoo_Click" Content="wyjdz na miasto" Width="150" FontSize="20" Background="Transparent"></Button>
+                <Button Click="usiadznakanapie_Click" Content="usiadz na kanapie" Background="Transparent" FontSize="20" Name="usiadznakanapie" Width="159"></Button>
+            </StackPanel>
+        </StackPanel>
+        <!--wyjrzyj za okno co dalej-->
+
+        <StackPanel Name="SmiercStrzal" Visibility="Collapsed" Grid.RowSpan="2">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://i.ytimg.com/vi/-ZGlaAxB7nI/maxresdefault.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <Label Content="przezywasz 1 dni;"></Label>
+        </StackPanel>
+        <!--zastrzelenie sie (zakonczenie 1)-->
+        
+        
+        
+        <StackPanel Name="stpogladaj" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://st2.depositphotos.com/1010613/11847/i/950/depositphotos_118474584-stock-photo-hand-holding-mobile-phone-with.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <MediaElement x:Name="Film"
+                  Margin="70,80,0,0"        
+                  Width="110"
+                  Height="200"
+                  Stretch="Uniform"
+                  LoadedBehavior="Manual"
+                  UnloadedBehavior="Stop"
+                  MediaOpened="Film_MediaOpened"
+                  MediaFailed="Film_MediaFailed"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                
+            <Button Name="tiktokstop" Click="tiktokstop_Click" Background="Transparent" Foreground="White" Content="przestan ogladac tiktoka" Width="150" HorizontalAlignment="Center" Margin="50,0,0,0"></Button>
+            </StackPanel>
+
+
+
+
+
+        </StackPanel>
+        <!--ogladanie tiktoka-->
+
+        <StackPanel Name="wyjdztiktok" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://www.moderngardenrooms.com/wp-content/uploads/2022/03/garden-room-bedroom-3-scaled.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <Label Content="co chcesz zrobic?" FontSize="20" HorizontalAlignment="Center"></Label>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,50" >
+
+                <Button Content="wyjrzyj przez okno" Width="150" Background="Transparent" Name="wyjrzyjzaokno1" Click="wyjrzyjzaokno1_Click"  FontWeight="Bold"></Button>
+                <Button Content="napij sie wody" Width="150" Background="Transparent" Name="napijsie1" Click="napijsie1_Click" FontWeight="Bold"></Button>
+            </StackPanel>
+        </StackPanel>
+<!--wstanie po tiktoku-->
+
+
+
+
+        <StackPanel Name="stackpanel42" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://investmap.pl/_i/image/240/112/66800_x800.jpg">
+                </ImageBrush>
+            </StackPanel.Background>
+            <Label Content="po zabawie na placu zabaw idziesz na miasto i stoisz przed biedronka " FontSize="20" HorizontalAlignment="Center" ></Label>
+            <Button Content="Wejdz" Width="150" FontWeight="Bold" Background="Transparent" Margin="0,110" FontSize="40" Name="wejsciebiedra" Click="wejsciebiedra_Click"></Button>
+        </StackPanel>
+            <!--idziesz do biedronki-->
+            
+            
+            
+            
+            
+            
+        <StackPanel Name="stackpanel52" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://pewnafranczyza.pl/wp-content/uploads/2024/08/biedronka.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <Label Content="pracownik biedronki mowi ci o tym ze nadchodzi wielkie tornado" FontSize="20" HorizontalAlignment="Center"></Label>
+            <Label Content="chesz wrocic do domu?" FontSize="20" HorizontalAlignment="Center"></Label>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                
+            <Button Name="wrocbiedronka" Content="wroc do domu" Width="150" Background="Transparent" FontWeight="Bold" Click="wrocbiedronka_Click"></Button>
+            <Button Name="idzmiastobiedronka" Content="idz na miasto"  Width="150" Background="Transparent" FontWeight="Bold" Click="idzmiastobiedronka_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+        <!--wchodzisz do biedronki-->
+
+
+
+        <StackPanel Name="stackpanel51" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://v.wpimg.pl/MDQ0YzAuYiUwUi9Jbg5vMHMKexMoV2FmJBJjWG4WYnNjASFOeURiKX9WNg4uFyErNlk4VDEZYjYwWTdXdVh9IWRSaU50FnUiM1I9SSARKSEzAGlOdRZ9ajtAPlg8"></ImageBrush>
+            </StackPanel.Background>
+            <Label Content="Idziesz szukac mamy, mocno pada deszcz gdy nagle spotykasz paru gangsterow" FontSize="20" HorizontalAlignment="Center" Foreground="White"></Label>
+            <Label Content="Oferuja ci jakies proszki bierzesz je?" Foreground="White" FontSize="20" HorizontalAlignment="Center"></Label>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="nie bierz" Width="150" FontWeight="Bold" Background="Transparent" Name="niebierz" Click="niebierz_Click"></Button>
+                <Button Content="bierz" Width="150" FontWeight="Bold" Background="Transparent" Name="bierz" Click="bierz_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+            <!--szukanie mamy i gangsterzy-->
+            
+            
+            
+            
+            
+            
+        <StackPanel Name="stackpanel512" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://bi.im-g.pl/im/e3/63/1c/z29768675IEG,Mefedron-zastepuje-ziolo-.jpg"></ImageBrush>
+            </StackPanel.Background>
+        </StackPanel>
+            <!--wziecie narkotykow-->
+            
+            
+            
+            
+
+        <StackPanel Name="stackpanel511" Grid.RowSpan="2" Visibility="Collapsed">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="https://bi.im-g.pl/im/6b/a5/1e/z32136299IEG,Skutki-intensywnych-opadow-deszczu-w-powiecie-elbl.jpg"></ImageBrush>
+            </StackPanel.Background>
+            <Label Content="znajdujesz mame, jest nie przytomna, dzwonisz po karetke" FontSize="20" HorizontalAlignment="Center" Foreground="White"></Label>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                
+            <Button Content="jedz z nimi" Width="150" FontWeight="Bold" Background="Transparent" Foreground="White"></Button>
+            <Button Content="wroc do domu" Width="150" FontWeight="Bold" Background="Transparent" Foreground="White"></Button>
+            </StackPanel>
+        </StackPanel>
+        <!--znalezienie mamy-->
+
+
+
+    </Grid>
+    
+</Window>
